@@ -318,15 +318,15 @@
       );
     }
 
-    function PainelRiga({ dados, color }) {
+    function PainelRede Intersetorial para Garantia da Aprendizagem - RIGA({ dados, color }) {
       const d = dados.riga;
       const cobertura = ((d.alunos_com_riga / d.alunos_total) * 100).toFixed(1);
       return (
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 12 }}>
             <KPICard icon="\u{1F4DD}" label="Alunos com RIGA" value={fmt(d.alunos_com_riga)} sub={"de " + fmt(d.alunos_total) + " (" + cobertura + "%)"} color={color} />
-            <KPICard icon="\u{1F504}" label="RIGAs Atualizados" value={d.rigas_atualizados + "%"} color={color} />
-            <KPICard icon="\u26A0\uFE0F" label="RIGAs Defasados" value={d.rigas_defasados} color={color} />
+            <KPICard icon="\u{1F504}" label="RIGAs Atualizadas" value={d.rigas_atualizadas + "%"} color={color} />
+            <KPICard icon="\u26A0\uFE0F" label="RIGAs Defasadas" value={d.rigas_defasadas} color={color} />
             <KPICard icon="\u{1F393}" label="Prof. Capacitados" value={d.professores_capacitados + "%"} color={color} />
           </div>
           <div style={{ background: "#0f172a", borderRadius: 12, padding: 16, border: "1px solid #1e293b", display: "flex", justifyContent: "center", gap: 32, flexWrap: "wrap" }}>
